@@ -5,6 +5,7 @@
     fromphone,           % show phone number
     fromemail,           % show email
     fromlogo,            % show logo in letter head
+    pagenumber=botright,
     version=last         % latest version of KOMA letter
 ]{scrlttr2}
 
@@ -18,6 +19,7 @@
 
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{lastpage}
 
 \usepackage[right]{eurosym}
 \DeclareUnicodeCharacter{20AC}{\euro}
@@ -36,6 +38,7 @@
 \setlength{\textwidth}{\useplength{firstheadwidth}}
 
 \begin{document}
+    \renewcommand{\pagemark}{{\usekomafont{pagenumber}{\thepage /\pageref{LastPage}}}}
     $if(firsthead)$
     $else$
       \firsthead{}
