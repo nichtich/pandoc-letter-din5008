@@ -36,6 +36,10 @@
 \setlength{\textwidth}{\useplength{firstheadwidth}}
 
 \begin{document}
+    $if(firsthead)$
+    $else$
+      \firsthead{}
+    $endif$
     \setkomavar{fromname}{$author$}
     \renewcommand*{\raggedsignature}{\raggedright}
     \setkomavar{fromaddress}{
