@@ -68,6 +68,7 @@ following line:
 
 The following yaml variables are supported:
 
+- `firsthead`
 - `opening`
 - `closing`
 - `encludes`
