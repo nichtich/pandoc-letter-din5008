@@ -22,6 +22,10 @@
 \usepackage[right]{eurosym}
 \DeclareUnicodeCharacter{20AC}{\euro}
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+}
+
 \makeatletter
     \setlength{\@tempskipa}{-1.2cm}%
     \@addtoplength{toaddrheight}{\@tempskipa}
